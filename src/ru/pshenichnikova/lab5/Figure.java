@@ -1,6 +1,9 @@
 package ru.pshenichnikova.lab5;
 
 import java.text.DecimalFormat;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
 * Абстрактный класс "Фигура"
@@ -22,6 +25,13 @@ public abstract class Figure implements Movable, Symmetry
      { id = nextId++; }
      
      
+     public String getTime() 
+     {
+	DateFormat dateFormat = new SimpleDateFormat("dd.MM.YYYY HH:mm:ss");
+	Date date = new Date();
+        return dateFormat.format(date);
+     }
+    
      public int getId()
      {
          return id;

@@ -73,7 +73,7 @@ public class Pentagon extends Figure
     public String toString()
     {
         String str;
-        str = " ID = " + this.getId() + " - " + this.getName();
+        str = this.getTime() + ") " + " ID = " + this.getId() + " - " + this.getName();
         str = str + "\n Периметр = " + f(this.getPerimeter());
         str = str + "\n Стороны: AB = " + f(this.getAB()) + ", BC = " + f(this.getBC()) + ", CD = " + f(this.getCD()) + ", DE = " + f(this.getDE()) + ", AE = " + f(this.getAE());
         str = str + "\n Координаты:";

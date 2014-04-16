@@ -43,7 +43,7 @@ public class Triangle extends Figure
     public String toString()
     {
         String str;
-        str = " ID = " + this.getId() + " - " + this.getName();
+        str = this.getTime() + ") " + " ID = " + this.getId() + " - " + this.getName();
         str = str + "\n Периметр = " + f(this.getPerimeter());
         str = str + "\n Стороны: AB = " + f(this.getAB()) + ", BC = " + f(this.getBC()) + ", AC = " + f(this.getAC());
         str = str + "\n Координаты:";
